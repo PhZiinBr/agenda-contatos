@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda</h1>
+        <form id="form-user">
+            <label for="name-user">Nome: </label>
+            <input id="name-user" type="text" placeholder="Insira o nome:" required>
+            <label for="user-phone-number">Telefone: </label>
+            <input id="user-phone-number" type="tel" placeholder="Número do telefone:" required>
+            <button type="submit" title="Salvar">Cadastrar</button>
+        </form>
+            <h2>Contatos</h2>
+            <table id="tabelaContatos" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="name-saved"></td>
+                        <td id="number-saved"></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <footer>
+        <div class="rodape">
+            <p>&copy;Todos os direitos reservados - 2024</p>
+            <p>Dev - José Junior</p>
+        </div>
+    </footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

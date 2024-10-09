@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: rgba(59, 117, 192, 0.2);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+/*---------------FORMULÁRIO---------------*/
+form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    padding: 40px;
+    width: 50%;
+    box-shadow: 10px 8px 40px rgb(23, 85, 121);
+    border-radius: 10px ;
+    background-color: rgba(25, 81, 136, 0.662);
+}
+
+form input {
+    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    background-color: rgba(25, 80, 136, 0.148);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+form input, button {
+    border-radius: 6px;
+    border: none;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #04224f;
+}
+
+#name-user::placeholder, #user-phone-number::placeholder {
+    color: #0e2a43;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+button {
+    padding: 15px;
+    background-color: rgba(11, 74, 161, 0.532);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(21, 53, 112);
+}
+
+/*---------------TABELA---------------*/
+h2 {
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    box-shadow: 1px 0px 10px;
+}
+
+thead {
+    height: 40px;
+    text-align: left;
+    background-color: rgba(11, 74, 161, 0.532);
+    color: #04224f;
+}
+
+thead th {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+thead th, tbody td {
+    padding: 20px;
+}
+
+/*---------------RODAPÉ---------------*/
+
+.rodape {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    height: 100px;
+    align-items: center;
+    padding: 0 20px; /* Adicionado padding horizontal */
+    background-color: #04224f;
+}
+
+.rodape p {
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    flex-grow: 1;
+    color: #fff;
+}
